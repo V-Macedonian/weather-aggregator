@@ -93,6 +93,7 @@ class Application @Inject() (uuidGenerator: UUIDGenerator) extends Controller {
     }
   }
   
+  
   def randomUUID = Action {
     logger.info("calling UUIDGenerator...")
     Ok(uuidGenerator.generate.toString)
